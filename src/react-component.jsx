@@ -31,17 +31,7 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-const MyComponentContainer = connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(MyComponent)
-
-
-export default class MyProviderComponent extends React.Component {
-  render() {
-    return <Provider store={this.props.$ngRedux}>
-      <MyComponentContainer fooBar={this.props.fooBar} baz={this.props.baz}>
-      </MyComponentContainer>
-    </Provider>
-  }
-}

@@ -1,0 +1,11 @@
+<html ng-app="app">
+  <body ng-controller="MyController as controller">
+    hi there11 {{controller.name}}
+    <button ng-click="changeName()">change name</button>
+
+    <my-provider-component
+      foo-bar="3"
+      baz="'baz'"
+    ></my-provider-component>
+  </body>
+</html>
